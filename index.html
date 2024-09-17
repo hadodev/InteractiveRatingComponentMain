@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css">
+
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+        <main>
+            <!-- Rating state start -->
+            <section class="card question">
+                <div class="circle">
+                    <img src="./assets/images/icon-star.svg" alt="star icon" />
+                </div>
+                <h2 class="card__title">How did we do?</h2>
+                <p class="card__description">
+                    Please let us know how we did with your support request. All feedback is appreciated to help us
+                    improve our offering!
+                </p>
+                <div class="card__points">
+                    <input type="radio" name="rate" value="1" id="rate_1" />
+                    <label for="rate_1" class="circle">1</label>
+                    <input type="radio" name="rate" value="2" id="rate_2" />
+                    <label for="rate_2" class="circle">2</label
+                    ><input type="radio" name="rate" value="3" id="rate_3" />
+                    <label for="rate_3" class="circle">3</label
+                    ><input type="radio" name="rate" value="4" id="rate_4" />
+                    <label for="rate_4" class="circle">4</label
+                    ><input type="radio" name="rate" value="5" id="rate_5" />
+                    <label for="rate_5" class="circle">5</label>
+                  </div>
+                  <button class="card__button">Submit</button>
+            </section>
+            <!-- Rating state end -->
+
+            <!-- Thank you state start -->
+            <section class="card thanks invisible">
+                <img src="./assets/images/illustration-thank-you.svg" alt="thank you illustration" />
+                <p class="card__result">You selected <span id="result"></span> out of 5</p>
+                <h2 class="card__title">Thank you!</h2>
+                <p class="card__description">
+                    We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to
+                    get in touch!
+                </p>
+                <!-- Thank you state end -->
+            </section>
+        </main>
+        <aside class="contact">
+            <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/contact/frontend-mentor-logo.png" alt="Frontend Mentor logo" />
+                <span>Challenge by Fronted Mentor</span>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/hadodev" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/contact/HadoDev-square-black-blue.png" alt="Hado Dev logo" />
+                <span>Coded by HaDo Dev</span>
+            </a>
+            <a href="https://github.com/hadodev" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/contact/github-logo-72.png" alt="github logo" />
+                <span>HaDo Dev github profile</span>
+            </a>
+            <a href="mailto:hado.dev.app@gmail.com">
+                <img src="./assets/images/contact/gmail-logo-72.png" alt="mail" />
+                <span>HaDo Dev gmail</span>
+            </a>
+        </aside>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
